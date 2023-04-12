@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang Sayur</title>
+    <link rel="stylesheet" href="keranjangsayur.css" />
+    <link rel="stylesheet" href="font/stylesheet.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- =========SWIPPER================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- ================NAV BAR=================== -->
+    <header class="header__container">
+      <nav class="nav">
+        <ul class="nav__container">
+          <a href="#home" class="nav__home"> <span>Home</span></a>
+          <a href="#purchase" class="nav__purchase">
+            <span>Purchase</span> <i class="bx bx-cart nav__icon"></i>
+          </a>
+          <a href="#value" class="nav__value">
+            <span>Value</span><i class="bx bx-award nav__icon"></i>
+          </a>
+          <a href="#about-us" class="nav__about-us">
+            <span>About Us</span> <i class="bx bx-leaf nav__icon"></i>
+          </a>
+          <a href="#contact" class="nav__contact">
+            <span>Contact</span> <i class="bx bx-phone nav__icon"></i>
+          </a>
+        </ul>
+      </nav>
+
+      <div class="nav__up">
+        <a href="#home"><i class="bx bxs-chevrons-up"></i></a>
+      </div>
+    </header>
+    <main>
+      <!-- ================ HOME =================== -->
+      <section class="home container grid" id="home">
+        <div class="home__image-container">
+          <img src="keranjang-sayur-imgs/home-background.png" alt="" />
+        </div>
+        <heading class="home__heading">
+          <img
+            src="keranjang-sayur-imgs/home-logo-2.png"
+            alt=""
+            class="home__heading-image"
+          />
+          <p>Sayuran Hidroponik</p>
+          <span class="home__restock"
+            ><i class="bx bx-time-five"></i> Restock Pada : 9 Desember 2032</span
+          >
+          <button class="button button__home">
+            <a href="https://www.tokopedia.com/" target="_blank"
+              ><i class="bx bx-cart-alt"></i>Pesan Sekarang</a
+            >
+          </button>
+        </heading>
+      </section>
+      <!-- ================ PURCHASE =================== -->
+      <section class="purchase container" id="purchase">
+        <p class="content__subtitle">Purchase</p>
+        <h2 class="content__title">Produk Kami<span>.</span></h2>
+        <p class="content__description">
+          Berikut adalah daftar produk kami yang dapat anda pesan sekarang juga. Jadwal
+          restock dapat diliat pada halaman atas website.
+        </p>
+        <a href="#value" class="purchase__info-lebih-lanjut"
+          >Info Lebih Lanjut <i class="bx bx-right-arrow-alt"></i
+        ></a>
+
+        <div class="purchase__slider-margin-container">
+          <div class="purchase__slider container">
+            <div class="purchase__slider-container swiper-wrapper">
+              <article class="purchase__card bayam swiper-slide">
+                <div class="purchase__card-image">
+                  <span class="purchase__card-stock-info">Stock Tersedia</span>
+                  <img src="keranjang-sayur-imgs/buy-bayam.png" alt="" />
+                </div>
+
+                <div class="purchase__card-info">
+                  <h2>Bayam</h2>
+                  <p>Rp. 25.000/Paket</p>
+                  <button class="button">
+                    <a href="https://www.tokopedia.com/" target="_blank"
+                      >Pesan Sekarang</a
+                    >
+                  </button>
+                </div>
+              </article>
+              <article class="purchase__card selada swiper-slide">
+                <div class="purchase__card-image">
+                  <span class="purchase__card-stock-info">Stock Tersedia</span>
+                  <img src="keranjang-sayur-imgs/buy-selada.png" alt="" />
+                </div>
+
+                <div class="purchase__card-info">
+                  <h2>Selada</h2>
+                  <p>Rp. 25.000/Paket</p>
+                  <button class="button">
+                    <a href="https://www.tokopedia.com/" target="_blank"
+                      >Pesan Sekarang</a
+                    >
+                  </button>
+                </div>
+              </article>
+              <article class="purchase__card pakchoy stock-habis swiper-slide">
+                <div class="purchase__card-image">
+                  <span class="purchase__card-stock-info">Stock Habis</span>
+                  <img src="keranjang-sayur-imgs/buy-pakcoy.png" alt="" />
+                </div>
+
+                <div class="purchase__card-info">
+                  <h2>Pak Choy</h2>
+                  <p>Rp. 25.000/Paket</p>
+                  <button class="button stock-habis">
+                    <a href="https://www.tokopedia.com/" target="_blank"
+                      >Pesan Sekarang</a
+                    >
+                  </button>
+                </div>
+              </article>
+              <article class="purchase__card melon swiper-slide">
+                <div class="purchase__card-image">
+                  <span class="purchase__card-stock-info">Stock Tersedia</span>
+                  <img src="keranjang-sayur-imgs/buy-melon.png" alt="" />
+                </div>
+
+                <div class="purchase__card-info">
+                  <h2>Melon</h2>
+                  <p>Rp. 25.000/Paket</p>
+                  <button class="button">
+                    <a href="https://www.tokopedia.com/" target="_blank"
+                      >Pesan Sekarang</a
+                    >
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="purchase__navigator">
+              <button class="purchase__navigator-left">
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button class="purchase__navigator-right">
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================ VALUE =================== -->
+      <section class="value container grid" id="value">
+        <div class="value__image-container">
+          <img
+            src="keranjang-sayur-imgs/value-contact-img.png"
+            alt=""
+            class="value__image"
+          />
+          <div class="value__image-background"></div>
+        </div>
+
+        <article class="grid__info">
+          <div class="value__info">
+            <p class="content__subtitle">Our Value</p>
+            <h2 class="content__title">Kelebihan Kami<span>.</span></h2>
+            <p class="content__description">
+              Metode pertanian hidroponik menawarkan sejumlah kelebihan dan manfaat yang
+              membawa dampak signifikan secara positif bagi para konsumen.
+            </p>
+          </div>
+
+          <ul class="accordion__container">
+            <li class="accordion__card">
+              <div class="accordion__top">
+                <i class="bx bx-check accordion__checkmark"></i>
+                <h3 class="accordion__title">Lebih Sehat dan Aman Dikonsumsi</h3>
+                <i class="bx bx-chevron-down"></i>
+              </div>
+              <div class="accordion__content-container">
+                <p class="accordion__content content__description">
+                  Tanaman hidroponik ditanam dalam lingkungan yang terkontrol, maka sayur
+                  hidroponik dapat dipanen dalam kondisi yang lebih segar dan lebih tahan
+                  lama dibandingkan sayur konvensional, sehingga dapat memberikan rasa dan
+                  aroma yang lebih baik saat dikonsumsi.
+                </p>
+              </div>
+            </li>
+            <li class="accordion__card">
+              <div class="accordion__top">
+                <i class="bx bx-check accordion__checkmark"></i>
+                <h3 class="accordion__title">Lebih Sehat dan Aman Dikonsumsi</h3>
+                <i class="bx bx-chevron-down"></i>
+              </div>
+              <div class="accordion__content-container">
+                <p class="accordion__content content__description">
+                  Tanaman hidroponik ditanam dalam lingkungan yang terkontrol, maka sayur
+                  hidroponik dapat dipanen dalam kondisi yang lebih segar dan lebih tahan
+                  lama dibandingkan sayur konvensional, sehingga dapat memberikan rasa dan
+                  aroma yang lebih baik saat dikonsumsi.
+                </p>
+              </div>
+            </li>
+            <li class="accordion__card">
+              <div class="accordion__top">
+                <i class="bx bx-check accordion__checkmark"></i>
+                <h3 class="accordion__title">Lebih Sehat dan Aman Dikonsumsi</h3>
+                <i class="bx bx-chevron-down"></i>
+              </div>
+              <div class="accordion__content-container">
+                <p class="accordion__content content__description">
+                  Tanaman hidroponik ditanam dalam lingkungan yang terkontrol, maka sayur
+                  hidroponik dapat dipanen dalam kondisi yang lebih segar dan lebih tahan
+                  lama dibandingkan sayur konvensional, sehingga dapat memberikan rasa dan
+                  aroma yang lebih baik saat dikonsumsi.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <!-- ================ ABOUT US =================== -->
+      <section class="container about-us grid" id="about-us">
+        <article class="grid__info">
+          <p class="content__subtitle">Process</p>
+          <h2 class="content__title">Kebun Kami<span>.</span></h2>
+          <p class="content__description">
+            Penanaman hidroponik kami melalui proses yang panjang dan presisi yang tinggi,
+            serta dibuat secara homemade dengan standar baku untuk memastikan kualitas dan
+            hasil panen yang optimal.
+          </p>
+        </article>
+
+        <div class="accordion__garden-container">
+          <div class="accordion__garden-card">
+            <img
+              src="keranjang-sayur-imgs/garden-1.png"
+              alt=""
+              class="accordion__garden-image accordion__garden-image-open"
+            />
+            <p
+              class="content__description accordion__garden-description accordion__garden-open"
+            >
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="accordion__garden-card">
+            <img
+              src="keranjang-sayur-imgs/garden-2.png"
+              alt=""
+              class="accordion__garden-image"
+            />
+            <p
+              class="content__description accordion__garden-description accordion__garden-close"
+            >
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="accordion__garden-card">
+            <img
+              src="keranjang-sayur-imgs/garden-3.png"
+              alt=""
+              class="accordion__garden-image"
+            />
+            <p
+              class="content__description accordion__garden-description accordion__garden-close"
+            >
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="accordion__garden-card">
+            <img
+              src="keranjang-sayur-imgs/garden-4.png"
+              alt=""
+              class="accordion__garden-image"
+            />
+            <p
+              class="content__description accordion__garden-description accordion__garden-close"
+            >
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ================ CONTACT =================== -->
+      <section class="contact container grid" id="contact">
+        <!-- === INI PAKE YANG DARI VALUE -->
+        <div class="value__image-container contact__property">
+          <img
+            src="keranjang-sayur-imgs/value-contact-img.png"
+            alt=""
+            class="value__image"
+          />
+          <div class="value__image-background"></div>
+        </div>
+        <!-- === INI PAKE YANG DARI VALUE -->
+        <article class="grid__info">
+          <p class="content__subtitle">Contact</p>
+          <h2 class="content__title">Hubungi Kami<span>.</span></h2>
+          <p class="content__description">
+            Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan atau
+            membutuhkan bantuan lebih lanjut terkait produk atau layanan kami.
+          </p>
+
+          <ul class="contact__container">
+            <li class="contact__card">
+              <article>
+                <i class="bx bxl-whatsapp"></i>
+                <div class="contact__card-info">
+                  <h3>WhatsApp</h3>
+                  <p>+62 555 232 121</p>
+                </div>
+              </article>
+              <button class="button"><a>Hubungi</a></button>
+            </li>
+            <li class="contact__card">
+              <article>
+                <i class="bx bxl-whatsapp"></i>
+                <div class="contact__card-info">
+                  <h3>WhatsApp</h3>
+                  <p>+62 555 232 121</p>
+                </div>
+              </article>
+              <button class="button"><a>Hubungi</a></button>
+            </li>
+            <li class="contact__card">
+              <article>
+                <i class="bx bxl-whatsapp"></i>
+                <div class="contact__card-info">
+                  <h3>WhatsApp</h3>
+                  <p>+62 555 232 121</p>
+                </div>
+              </article>
+              <button class="button"><a>Hubungi</a></button>
+            </li>
+            <li class="contact__card">
+              <article>
+                <i class="bx bxl-whatsapp"></i>
+                <div class="contact__card-info">
+                  <h3>WhatsApp</h3>
+                  <p>+62 555 232 121</p>
+                </div>
+              </article>
+              <button class="button"><a>Hubungi</a></button>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <!-- =============== FOOTER ===================== -->
+    <footer class="container footer">
+      <div class="footer__copyright">&#169; Keranjang Sayur. All right reserved</div>
+      <p class="footer__info">
+        <span>Terms & Agreements</span>
+        <span>Privacy Policy</span>
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="keranjangsayur.js"></script>
+  </body>
+</html>
